@@ -30,6 +30,8 @@ body{
   font-size: 80px;
   font-weight: 800;
   color: var(--white);
+  letter-spacing: -3%;
+  line-height: 110%;
 }
 .title span {
   background: linear-gradient(45deg, var(--green-700) 100%, var(--green-500) 100%);
@@ -39,6 +41,7 @@ body{
 .text {
   font-size: 20px;
   color: var(--text-color);
+  text-decoration: none;
 }
 .sub-text {
   font-size: 20px;
@@ -46,11 +49,14 @@ body{
   opacity: 0.5;
 }
 .button {
+  padding: 15px 60px;
+  font-size: 24px;
+  font-weight: 600;
   cursor: pointer;
   border: none;
   border-radius: 80px;
   color: var(--white);
-  background: linear-gradient(45deg, var(--green-700) 100%, var(--green-500) 100%)
+  background: linear-gradient(45deg, var(--green-700) 100%, var(--green-500) 100%);
 }
 
 /*--------------effects---------------------*/
@@ -58,29 +64,143 @@ body{
   background: linear-gradient(45deg, var(--green-700) 55%, var(--green-500) 63%);
   filter: blur(70px);
   border-radius: 50%;
+  opacity: 0.3;
+  position: absolute;
 }
 .effect-white {
   background-color: var(--effect-white);
   filter: blur(70px);
+  opacity: 0.3;
+  position: absolute;
 }
 .effect-large {
   width: 400px;
   height: 320px;
-  opacity: 0.3;
 }
 .effect-normal {
   width: 230px;
   height: 230px;
-  opacity: 0.2;
 }
 .effect-small {
   width: 200px;
   height: 180px;
-  opacity: 0.15;
+  opacity: 0.2;
 }
 
+.container {
+  padding: 0 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sector {
+  margin-top: 100px;
+}
+.logo {
+  background: linear-gradient(45deg, var(--green-700) 100%, var(--green-500) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 38px;
+  font-weight: 800;
+}
 
 
 /*-----------------components------------------------*/
 
+.header {
+  width: 100%;
+  padding: 30px 0;
+}
+.header-container {
+  justify-content: start;
+  gap: 100px;
+}
+.header--menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+}
 
+.sector-home {
+  position: relative;
+}
+.home-image {
+  position: relative;
+}
+
+.star {
+  position: absolute;
+  top: -80px;
+  right: 40px;
+}
+.star-img {
+  position: relative;
+}
+.star-text {
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--white);
+  position: absolute;
+  top: 70px;
+  right: 65px;
+  rotate: -8deg;
+}
+
+.home-effect-1 {
+  top: 64;
+  left: 86px;
+}
+.home-effect-2 {
+  bottom: -50px;
+  right: 50px;
+}
+.home-effect-3 {
+  top: 830px;
+  left: 85px;
+}
+.home-effect-4 {
+  top: 0px;
+  right: 240px;
+}
+.home-effect-5 {
+  left: 430px;
+  top: 400px;
+}
+.home-effect-6 {
+  top: 900px;
+  right: 200px;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.main-cup {
+  width: 360px;
+  margin-right: 80px;
+}
+.button-more {
+  background-color: var(--bkg-color);
+  color: var(--white);
+  padding: 15px 60px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 80px;
+  position: absolute;
+  margin-left: 16px;
+}
+
+.statistic-block {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 50px;
+}
+
+.statistic-title {
+  font-weight: 400;
+}
