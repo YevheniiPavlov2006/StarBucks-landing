@@ -8,6 +8,7 @@
   --green-500: #35C66B;
   --effect-white: #D9D9D9;
   --text-color: #D9D9D9;
+  --gray-color: #a7a7a7;
 }
 
 *{   
@@ -24,7 +25,7 @@ body{
   font-family: Montserrat, sans-serif;  
   cursor: default; 
   background-color: var(--bkg-color);
-  overflow: ;
+  scroll-behavior: smooth;
 }
 /*-----------------components------------------------*/
 .title {
@@ -106,9 +107,6 @@ body{
   font-weight: 800;
 }
 
-.nav-link {
-}
-
 
 /*-----------------components------------------------*/
 
@@ -181,7 +179,7 @@ body{
   top: 400px;
 }
 .home-effect-6 {
-  top: 900px;
+  top: 850px;
   right: 200px;
 }
 
@@ -316,6 +314,7 @@ body{
 
 .select-img-block {
   position: relative;
+  z-index: 10;
 }
 .star-select {
   position: absolute;
@@ -360,6 +359,9 @@ body{
 .select-content-img {
   width: 100%;
 }
+.select-img {
+  z-index: 10;
+}
 
 .button-select {
   position: absolute;
@@ -368,4 +370,115 @@ body{
 
   font-size: 18px;
   padding: 15px 40px;
+}
+
+.select-effect-1 {
+  top: 70px;
+  right: 150px;
+}
+.select-effect-2 {
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+}
+.select-effect-3 {
+  position: absolute;
+  top: 100px;
+  right: 0;
+}
+
+.sector-shop {
+  margin-top: 100px;
+  position: relative;
+}
+.container-shop {
+  padding-right: 400px;
+  flex-direction: column;
+  align-items: start;
+}
+.shop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-shop {
+  max-width: 450px;
+}
+.shop-slider {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 50px;
+}
+.shop-slider-card {
+  padding: 15px 0px 40px 0px;
+  border: 1px solid var(--gray-color);
+  border-radius: 30px;
+}
+
+.slider-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 35px;
+  text-align: center;
+  gap: 15px;
+}
+.slider-card-title {
+  line-height: 168%;
+  font-size: 32px;
+  color: var(--white);
+  font-weight: 500;
+}
+
+.slider-card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 10px;
+}
+.slider-card-info-price {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.slider-card-btn {
+  font-size: 15px;
+  padding: 15px 40px;
+  min-width: 186px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.active-card {
+  border-color: var(--green-700);
+}
+
+.slider-buttons-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  position: absolute;
+  bottom: 200px;
+  right: 300px;
+}
+
+.slider-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  border: 1px solid var(--green-700);
+  background-color: var(--bkg-color);
+  color: var(--green-700);
+  font-size: 30px;
+  font-weight: 500;
+  cursor: pointer;
 }
