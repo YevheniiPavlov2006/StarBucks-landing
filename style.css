@@ -391,6 +391,24 @@ body{
   margin-top: 100px;
   position: relative;
 }
+
+.shop-effect-1 {
+  top: 0;
+  left: 220px;
+}
+.shop-effect-2 {
+  bottom: 200px;
+  left: 40%;
+}
+.shop-effect-3 {
+  bottom: 100px;
+  left: 100px;
+}
+.shop-effect-4 {
+  bottom: 300px;
+  right: 200px;
+}
+
 .container-shop {
   padding-right: 400px;
   flex-direction: column;
@@ -406,9 +424,10 @@ body{
 }
 .shop-slider {
   margin-top: 50px;
+  margin-bottom: 50px;
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   gap: 50px;
 }
@@ -416,6 +435,7 @@ body{
   padding: 15px 0px 40px 0px;
   border: 1px solid var(--gray-color);
   border-radius: 30px;
+  max-width: 280px;
 }
 
 .slider-card-body {
@@ -467,8 +487,10 @@ body{
   gap: 10px;
 
   position: absolute;
-  bottom: 200px;
+  bottom: 300px;
   right: 300px;
+
+  z-index: 20;
 }
 
 .slider-btn {
