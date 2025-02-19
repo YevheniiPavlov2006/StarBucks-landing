@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const slides = document.querySelectorAll(".shop-slider-card");
   const totalSlides = slides.length;
   
-  let index = 0;
+  let index = totalSlides - 1;
 
   function showSlide(){
     slides.forEach((slide, i) => {
