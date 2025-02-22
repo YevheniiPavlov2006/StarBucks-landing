@@ -7,6 +7,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="menu-panel" class="header-menu-panel">
+    <div id="header-menu-close" class="close-header-menu-panel">&#x2715;</div>
+    <div class="header--menu--block">
+      <a href="#home" class="text nav-link">Home</a>
+      <a href="#select" class="text nav-link">Select</a>
+      <a href="#shop" class="text nav-link">Shop</a>
+      <a href="#events" class="text nav-link">Events</a>
+    </div>
+  </div>
   <div class="header" id="header">
     <div class="container header-container">
       <div class="logo">StarBucks</div>
@@ -16,6 +25,7 @@
         <a href="#shop" class="text nav-link">Shop</a>
         <a href="#events" class="text nav-link">Events</a>
       </div>
+      <img id="header-menu-open" class="header-menu-img" src="images/header-menu-img.png" alt="">
     </div>
   </div>
   <div class="sector sector-home" id="home">
@@ -27,10 +37,10 @@
     <div class="effect-white effect-small home-effect-5"></div>
     <div class="effect-white effect-normal home-effect-6"></div>
     
-    <div class="container">
+    <div class="container home-container">
       <div class="home-content">
-        <div class="title">New Cafe by <span>StarBucks</span></div>
-        <div class="text">Have time to buy the most harmonious drinks in the <br/>new Starbucks coffee and don't forget about the discount!</div>
+        <div class="title">New Cafe by<br/> <span>StarBucks</span></div>
+        <div class="text text-home">Have time to buy the most harmonious drinks in the new Starbucks coffee and don't forget about the discount!</div>
         <div class="home-buttons-panel">
           <button class="button">Select a coffee</button>
           <button class="button-more">More</button>
@@ -38,15 +48,15 @@
         <div class="statistic-block">
           <div class="statistic-card">
             <div class="title statistic-title">9K<span>+</span></div>
-            <div class="text">Premium<br/> Users</div>
+            <div class="text statistic-text">Premium<br/> Users</div>
           </div>
           <div class="statistic-card">
             <div class="title statistic-title">2K<span>+</span></div>
-            <div class="text">Happy<br/> Customer</div>
+            <div class="text statistic-text">Happy<br/> Customer</div>
           </div>
           <div class="statistic-card">
             <div class="title statistic-title">28<span>+</span></div>
-            <div class="text">Awards<br/> Winning</div>
+            <div class="text statistic-text">Awards<br/> Winning</div>
           </div>
         </div>
       </div>
@@ -85,10 +95,12 @@
       </div>
     </div>
   </div>
+  <script src="app.js"></script>
+
+  <!--
   <div class="sector sector-select" id="select">
 
     <img class="style-decor-select-lines" src="images/style-decor-select.png" alt="">
-
     <div class="effect-green effect-normal select-effect-1"></div>
 
 

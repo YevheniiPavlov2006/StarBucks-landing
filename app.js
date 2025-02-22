@@ -34,3 +34,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+
+//------------------------------menu-panel----------------------//
+
+const openPanel = document.getElementById("header-menu-open")
+const closePanel = document.getElementById("header-menu-close")
+const menuPanel = document.getElementById("menu-panel")
+
+openPanel.addEventListener('click', function(){
+  menuPanel.style.top = '0px';
+})
+
+closePanel.addEventListener('click', function(){
+  menuPanel.style.top = '-100%';
+})
