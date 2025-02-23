@@ -833,10 +833,15 @@ a {
   min-width: 186px;
   width: 100%;
   margin-top: 15px;
+  cursor: pointer;
 }
 
 .active-card {
   border-color: var(--green-700);
+}
+@keyframes slideShow {
+  from {opacity: 0.2;}
+  to {opacity: 1;}
 }
 
 .slider-buttons-block {
@@ -937,10 +942,10 @@ a {
     padding: 15px 0px 30px 0px;
   }
   .slider-card-title {
-    font-size: 18px;
+    font-size: 24px;
   }
   .slider-card-text {
-    font-size: 12px;
+    font-size: 16px;
   }
   .slider-card-info-price, .slider-card-info-ml {
     font-size: 14px;
@@ -960,14 +965,31 @@ a {
   }
 }
 @media(max-width:550px) {
+  .slider-card-info-price, .slider-card-info-ml {
+    font-size: 16px;
+  }
+  .active-card {
+    display: flex;
+    animation-name: slideShow;
+    animation-duration: 3s;
+  }
+  .shop-slider-card {
+    display: none;
+  }
+  .slider-card-body {
+    padding: 0 20px;
+  }
+  .slider-card-text {
+    font-size: 18px;
+  }
+  .slider-card-title {
+    font-size: 28px;
+  }
   .container-shop {
     gap: 0px;
   }
   .shop-slider {
     flex-direction: column;
-  }
-  .slider-buttons-block {
-    bottom: 900px;
   }
   .container-shop{
     padding: 0 20px;
@@ -1074,6 +1096,7 @@ a {
   flex-direction: column;
   gap: 40px;
   padding: 30px 5px 30px 20px;
+  background-size: cover;
 }
 
 .event-card-title {
@@ -1113,6 +1136,9 @@ a {
   }
 }
 @media(max-width:700px){
+  .event-card {
+    border-radius: 15px;
+  }
   .events-header {
     flex-direction: column-reverse;
     align-items: start;
@@ -1144,10 +1170,12 @@ a {
   }
   .button-grid {
     font-size: 14px;
-    padding: 10px 22px;
+    padding: 8px 16px;
+    border-radius: 12px;
   }
   .event-card {
     gap: 20px;
+    padding: 20px 10px;
   }
   .container {
     padding: 0 20px;

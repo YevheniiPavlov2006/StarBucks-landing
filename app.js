@@ -10,11 +10,14 @@ document.addEventListener("DOMContentLoaded", () => {
   let index = totalSlides - 1;
 
   function showSlide(){
+
+    
     slides.forEach((slide, i) => {
       if (i === index) {
           slide.style.display = "block";
           slide.classList.add('active-card')
       } else {
+          slide.style.display = "none";
           slide.classList.remove('active-card')
       }
     });
@@ -22,6 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   nextBtn.addEventListener("click", () => {
     index = (index + 1) % totalSlides;
+    if(window.matchMedia("(min-width: 550px)")){
+
+    }
     showSlide();
   });
   
@@ -48,3 +54,4 @@ openPanel.addEventListener('click', function(){
 closePanel.addEventListener('click', function(){
   menuPanel.style.top = '-100%';
 })
+
