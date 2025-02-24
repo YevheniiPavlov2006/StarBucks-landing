@@ -7,12 +7,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let index = totalSlides - 1;
 
+  function showSlide() {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("active-card", i === index);
+
+      // Если ширина экрана <= 800px, скрываем неактивные карточки
+      if (window.innerWidth <= 800) {
+        slide.style.display = i === index ? "block" : "none";
+      } else {
+        slide.style.display = "block"; // Показываем все карточки на большом экране
+      }
+    });
+  }
   nextBtn.addEventListener("click", () => {
     index = (index + 1) % totalSlides;
 
     slides.forEach((slide, i) => {
       slide.classList.toggle("active-card", i === index);
-      slide.style.display = i === index ? "block" : "none";
+      showSlide();
     });
   });
 
@@ -21,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     slides.forEach((slide, i) => {
       slide.classList.toggle("active-card-back", i === index);
-      slide.style.display = i === index ? "block" : "none";
+      showSlide();
     });
   });
 
@@ -29,9 +41,9 @@ document.addEventListener("DOMContentLoaded", () => {
   slides.forEach((slide, i) => {
     slide.style.display = i === index ? "block" : "none";
     slide.classList.toggle("active-card", i === index);
+    showSlide();
   });
 });
-
 
 
 //------------------------------menu-panel----------------------//

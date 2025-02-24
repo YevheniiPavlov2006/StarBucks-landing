@@ -611,6 +611,7 @@ a {
   width: 180px;
   height: 180px;
   position: relative;
+  cursor: pointer;
 }
 .star-select-text {
   position: absolute;
@@ -939,12 +940,12 @@ a {
     padding: 0 40px;
   }
   .active-card {
-    display: flex;
+    display: block;
     animation-name: slideShow;
     animation-duration: 1.5s;
   }
   .active-card-back {
-    display: flex;
+    display: block;
     animation-name: slideShowBack;
     animation-duration: 1.5s;
   }
@@ -987,9 +988,6 @@ a {
 @media(max-width:550px) {
   .slider-card-info-price, .slider-card-info-ml {
     font-size: 16px;
-  }
-  .shop-slider-card {
-    display: none;
   }
   .slider-card-body {
     padding: 0 20px;
