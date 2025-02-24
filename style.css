@@ -890,9 +890,6 @@ a {
   padding: 15px;
 }
 
-.btn-back {
-  rotate: 180deg;
-}
 
 @media(max-width:1280px){
   .container-shop {
@@ -982,12 +979,6 @@ a {
     font-weight: 400;
     padding: 10px;
     min-width: 100%;
-  }
-  .btn-back {
-    padding-top: 16px;
-  }
-  .btn-next {
-    padding-bottom: 16px;
   }
   .slider-buttons-block {
     padding: 0 10px;
@@ -1391,10 +1382,6 @@ a {
   padding-bottom: 20px;
 }
 
-.footer-btn {
-  rotate: -90deg;
-  padding-right: 16px;
-}
 
 .footer-menu {
   display: flex;
