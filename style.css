@@ -984,10 +984,10 @@ a {
     min-width: 100%;
   }
   .btn-back {
-    padding-bottom: 8px;
+    padding-top: 16px;
   }
   .btn-next {
-    padding-bottom: 12;
+    padding-bottom: 16px;
   }
   .slider-buttons-block {
     padding: 0 10px;
