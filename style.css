@@ -839,10 +839,27 @@ a {
 .active-card {
   border-color: var(--green-700);
 }
+
 @keyframes slideShow {
-  from {opacity: 0.2;}
-  to {opacity: 1;}
+  from {
+    opacity: 0.2;
+    margin-left: 150px;
+  }
+  to {
+    opacity: 1;
+    margin-left: 0;
 }
+}
+
+@keyframes slideShowBack {
+  from {
+    opacity: 0.2;
+    margin-right: 150px;
+  }
+  to {
+    opacity: 1;
+    margin-right: 0;
+}}
 
 .slider-buttons-block {
   display: flex;
@@ -971,7 +988,7 @@ a {
   .active-card {
     display: flex;
     animation-name: slideShow;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
   }
   .shop-slider-card {
     display: none;
@@ -1185,7 +1202,6 @@ a {
   }
 }
 
-/*
 .sector-contacts {
   margin-top: 150px;
   position: relative;
@@ -1196,7 +1212,7 @@ a {
   left: 200px;
   top: 200px;
 }
-.cantacts-effect-3 {
+.contacts-effect-3 {
   position: absolute;
   bottom: -80px;
   right: 30%;
@@ -1265,6 +1281,91 @@ a {
 }
 .container-contacts {
   align-items: start;
+}
+
+.style-decor-contacts-lines {
+  display: none;
+}
+
+@media(max-width:1200px){
+  .contacts-img {
+    width: 450px;
+    z-index: 10;
+  }
+}
+@media(max-width:1000px){
+  .contacts-img {
+    width: 350px;
+  }
+  .star-contacts-img {
+    width: 150px;
+    height: 150px;
+  }
+  .star-contacts-text {
+    font-size: 26px;
+    top: 40px;
+    left: -10px;
+  }
+  .sector-contacts {
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+  .contacts-content {
+    gap: 25px;
+  }
+  .container-contacts {
+    align-items: center;
+    gap: 10px;
+  }
+  .media-line-text {
+    font-size: 22px;
+  }
+}
+@media(max-width:800px){
+  .contacts-effect-1, .contacts-effect-2, .contacts-effect-3 {
+    display: none;
+  }
+}
+@media(max-width:700px){
+  .container-contacts {
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+  .contacts-img-block {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  .star-contacts {
+    display: none;
+  }
+  .style-decor-contacts-lines {
+    display: block;
+    width: 120%;
+    position: absolute;
+    top: -30px;
+  }
+  .contacts-img {
+    margin-right: -5px;
+  }
+}
+@media(max-width:550px){
+  .contacts-img {
+    width: 60%;
+  }
+  .sector-contacts {
+    margin-top: 60px;
+  }
+  .style-decor-contacts-lines {
+    top: 0px;
+  }
+  .media-line-text {
+    font-size: 16px;
+  }
+  .media-line img{
+    width: 30px;
+    height: 30px;
+  }
 }
 
 
