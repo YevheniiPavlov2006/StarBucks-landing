@@ -1,44 +1,37 @@
-
 document.addEventListener("DOMContentLoaded", () => {
-  const nextBtn = document.getElementById('btn-next')
-  const backBtn = document.getElementById('btn-back')
-  
-  const slider = document.getElementById('slider')
+  const nextBtn = document.getElementById('btn-next');
+  const backBtn = document.getElementById('btn-back');
+
   const slides = document.querySelectorAll(".shop-slider-card");
   const totalSlides = slides.length;
-  
+
   let index = totalSlides - 1;
-
-  function showSlide(){
-
-    
-    slides.forEach((slide, i) => {
-      if (i === index) {
-          slide.style.display = "block";
-          slide.classList.add('active-card')
-      } else {
-          slide.style.display = "none";
-          slide.classList.remove('active-card')
-      }
-    });
-  }
 
   nextBtn.addEventListener("click", () => {
     index = (index + 1) % totalSlides;
-    if(window.matchMedia("(min-width: 550px)")){
 
-    }
-    showSlide();
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("active-card", i === index);
+      slide.style.display = i === index ? "block" : "none";
+    });
   });
-  
+
   backBtn.addEventListener("click", () => {
     index = (index - 1 + totalSlides) % totalSlides;
-    showSlide();
-  });
-  
-  showSlide();
 
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("active-card-back", i === index);
+      slide.style.display = i === index ? "block" : "none";
+    });
+  });
+
+  // Начальная отрисовка слайда
+  slides.forEach((slide, i) => {
+    slide.style.display = i === index ? "block" : "none";
+    slide.classList.toggle("active-card", i === index);
+  });
 });
+
 
 
 //------------------------------menu-panel----------------------//
