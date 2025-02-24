@@ -11,11 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
     slides.forEach((slide, i) => {
       slide.classList.toggle("active-card", i === index);
 
-      // Если ширина экрана <= 800px, скрываем неактивные карточки
       if (window.innerWidth <= 800) {
         slide.style.display = i === index ? "block" : "none";
       } else {
-        slide.style.display = "block"; // Показываем все карточки на большом экране
+        slide.style.display = "block"; 
       }
     });
   }
@@ -60,3 +59,22 @@ closePanel.addEventListener('click', function(){
   menuPanel.style.top = '-100%';
 })
 
+const headerMenuBtn1 = document.getElementById('navLink1')
+const headerMenuBtn2 = document.getElementById('navLink2')
+const headerMenuBtn3 = document.getElementById('navLink3')
+const headerMenuBtn4 = document.getElementById('navLink4')
+headerMenuBtn1.addEventListener('click', () => {
+  menuPanel.style.top = '-100%';
+})
+
+headerMenuBtn2.addEventListener('click', () => {
+  menuPanel.style.top = '-100%';
+})
+
+headerMenuBtn3.addEventListener('click', () => {
+  menuPanel.style.top = '-100%';
+})
+
+headerMenuBtn4.addEventListener('click', () => {
+  menuPanel.style.top = '-100%';
+})
