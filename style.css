@@ -880,22 +880,18 @@ a {
 }
 
 .slider-btn {
-  border-radius: 20px;
+  border-radius: 18px;
   border: 1px solid var(--green-700);
   background-color: var(--bkg-color);
   color: var(--green-700);
-  font-size: 30px;
+  font-size: 16px;
   font-weight: 500;
   cursor: pointer;
-  padding: 10px 15px;
+  padding: 15px;
 }
 
 .btn-back {
   rotate: 180deg;
-  padding-bottom: 8px;
-}
-.btn-next {
-  padding-bottom: 12px;
 }
 
 @media(max-width:1280px){
@@ -986,10 +982,6 @@ a {
     font-weight: 400;
     padding: 10px;
     min-width: 100%;
-  }
-  .slider-btn {
-    padding: 6px 10px;
-    border-radius: 12px;
   }
   .slider-buttons-block {
     padding: 0 10px;
