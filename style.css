@@ -808,6 +808,9 @@ a {
   text-align: center;
   gap: 15px;
 }
+.slider-card-body a{
+  width: 100%;
+}
 .slider-card-title {
   line-height: 168%;
   font-size: 32px;
