@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     index = (index + 1) % totalSlides;
 
     slides.forEach((slide, i) => {
+      slide.classList.remove("active-card-back")
       slide.classList.toggle("active-card", i === index);
       showSlide();
     });
@@ -31,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     index = (index - 1 + totalSlides) % totalSlides;
 
     slides.forEach((slide, i) => {
+      slide.classList.remove("active-card")
       slide.classList.toggle("active-card-back", i === index);
       showSlide();
     });
